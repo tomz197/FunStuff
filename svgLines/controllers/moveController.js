@@ -23,14 +23,15 @@ export default class MoveController {
 
   mount() {
     this.#canvas.svg.addEventListener("mousemove", this.#handleMouseMove)
-    window.addEventListener("click", this.#handleLeftClick);
-    window.addEventListener("contextmenu", this.#handleRightClick);
+    this.#canvas.svg.addEventListener("mousedown", this.#handleLeftClick);
+    this.#canvas.svg.addEventListener("mouseup", this.#handleLeftClick);
+    // window.addEventListener("contextmenu", this.#handleRightClick);
   }
 
   unmount() {
     this.#canvas.svg.removeEventListener("mousemove", this.#handleMouseMove)
     window.removeEventListener("click", this.#handleLeftClick);
-    window.removeEventListener("contextmenu", this.#handleRightClick);
+    // window.removeEventListener("contextmenu", this.#handleRightClick);
     this.#reset();
   }
 
@@ -40,6 +41,19 @@ export default class MoveController {
     this.#canvas.movePoint(this.#movingPoint, clientX, clientY);
   }
 
+  // #handleMouseDown = (event) => {
+  //   const { clientX, clientY } = event;
+  //   this.#movingPoint = this.#canvas.getPoint(clientX, clientY);
+  //   if (!this.#movingPoint) return;
+  //   this.#moveFrom = { x: clientX, y: clientY };
+  // }
+
+  // #handleMouseUp = (event) => {
+  //   if (!this.#movingPoint) return;
+  //   this.#canvas.movePoint(this.#movingPoint, this.#moveFrom.x, this.#moveFrom.y);
+  //   this.#movingPoint = null;
+  //   this.#moveFrom = null;
+  // }
   #handleLeftClick = (event) => {
     const { clientX, clientY } = event;
 
@@ -55,6 +69,7 @@ export default class MoveController {
   }
 
   #handleRightClick = (event) => {
+    console.log("right click");
     event.preventDefault();
     if (!this.#movingPoint) return;
     this.#canvas.movePoint(this.#movingPoint, this.#moveFrom.x, this.#moveFrom.y);
