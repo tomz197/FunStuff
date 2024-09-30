@@ -21,6 +21,13 @@
 
 <body>
   <header>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <div class="landing-page">
@@ -56,22 +63,22 @@
         </a>
       </div>
     </div>
-    <div class="project-list">
+    <div class="project-list" id="projects">
       <h3 class="project-section-title">Main project</h3>
-      <div class="project-card" id="bagetaexpress-card">
-        <div class="project-card-image">
+      <div class="card" id="bagetaexpress-card">
+        <div class="card-image">
           <img loading="lazy" src="assets/images/bagetaExpress_brandmark.svg" alt="Bageta Express logo" />
         </div>
-        <div class="project-card__header">
-          <h4 class="project-card__header-title">Bageta Express</h4>
+        <div class="card__header">
+          <h4 class="card__header-title">Bageta Express</h4>
         </div>
-        <div class="project-card__content">
+        <div class="card__content">
           <p>
             Bageta Express is a web application for ordering food for school. It is a project I have been working on
             for a while. It's actively being used by a local restaurant and school in my hometown.
           </p>
         </div>
-        <div class="project-card__footer">
+        <div class="card__footer">
           <a class="btn btn--flex" target="_blank" href="https://bageta.express">go to website</a>
           <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/bagetaexpress">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -94,20 +101,20 @@
         </div>
       </div>
       <h3 class="project-section-title">Side projects</h3>
-      <div class="project-card">
-        <div class="project-card-image">
+      <div class="card">
+        <div class="card-image">
           <img loading="lazy" src="assets/images/os-quiz.png" alt="screenshot from OS-quiz website" />
         </div>
-        <div class="project-card__header">
-          <h4 class="project-card__header-title">OS quiz</h4>
+        <div class="card__header">
+          <h4 class="card__header-title">OS quiz</h4>
         </div>
-        <div class="project-card__content">
+        <div class="card__content">
           <p>
             It's a simple web application for testing your knowledge of operating systems. It's a project I
             created in very short time due to lack of practise tests for operating systems at my university.
           </p>
         </div>
-        <div class="project-card__footer">
+        <div class="card__footer">
           <a class="btn btn--flex" target="_blank" href="https://os.zifcak.dev">go to website</a>
           <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/os-drill">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -121,20 +128,20 @@
         </div>
       </div>
       <h3 class="project-section-title">Fun ideas</h3>
-      <div class="project-card">
-        <div class="project-card-image">
+      <div class="card">
+        <div class="card-image">
           <img loading="lazy" src="assets/images/docs.png" alt="screenshot from document" />
         </div>
-        <div class="project-card__header">
-          <h4 class="project-card__header-title">Scheat sheet / docs</h4>
+        <div class="card__header">
+          <h4 class="card__header-title">Scheat sheet / docs</h4>
         </div>
-        <div class="project-card__content">
+        <div class="card__content">
           <p>
             These are resources that I have found useful, interesting or funny but I'm great at forgetting where I found
             them. So I created this cheat sheet or doc to keep track of them
           </p>
         </div>
-        <div class="project-card__footer">
+        <div class="card__footer">
           <a class="btn btn--flex" target="_blank" href="https://github.com/tomz197/docs">go to website</a>
           <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/docs">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -147,20 +154,20 @@
           </a>
         </div>
       </div>
-      <div class="project-card">
-        <div class="project-card-image">
+      <div class="card">
+        <div class="card-image">
           <img loading="lazy" src="assets/images/window-tracking.png" alt="screenshot from document" />
         </div>
-        <div class="project-card__header">
-          <h4 class="project-card__header-title">Multiwindow Tracking</h4>
+        <div class="card__header">
+          <h4 class="card__header-title">Multiwindow Tracking</h4>
         </div>
-        <div class="project-card__content">
+        <div class="card__content">
           <p>
             Open multiple instances of your browser, drag them arond and see what will happen. Fun thig that's possible
             that I saw somewhere and wanted to replicate.
           </p>
         </div>
-        <div class="project-card__footer">
+        <div class="card__footer">
           <a class="btn btn--flex" target="_blank" href="multiwindowTracking/index.html">go to website</a>
           <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/funstuff">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -173,19 +180,19 @@
           </a>
         </div>
       </div>
-      <div class="project-card">
-        <div class="project-card-image">
+      <div class="card">
+        <div class="card-image">
           <img loading="lazy" src="assets/images/svgLines.png" alt="screenshot of drawen lines" />
         </div>
-        <div class="project-card__header">
-          <h4 class="project-card__header-title">Svg lines</h4>
+        <div class="card__header">
+          <h4 class="card__header-title">Svg lines</h4>
         </div>
-        <div class="project-card__content">
+        <div class="card__content">
           <p>
             Create dots, create lines between them and move them around. Simple thing written in plain JS.
           </p>
         </div>
-        <div class="project-card__footer">
+        <div class="card__footer">
           <a class="btn btn--flex" target="_blank" href="svgLines/index.html">go to website</a>
           <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/funstuff">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -197,6 +204,59 @@
             </svg>
           </a>
         </div>
+      </div>
+    </div>
+
+    <div class="card" id="about-me">
+      <div class="card__header">
+        <h4 class="card__header-title">About me</h4>
+      </div>
+      <div class="card__content">
+        <p>I have been programming since 2019, at first, I wanted to make games(as many of us do) but that was too hard,
+          so after a while, in 2020, I landed in web development. After 2 years I landed my first job as a frontend
+          developer and I've been slowly moving towards backed. Currently, I'm studying at <a href="https://fi.muni.cz"
+            target="_blank" class="link__inline">FI MUNI</a>, exploring
+          programming in general.
+        </p>
+      </div>
+      <div class="card__footer">
+      </div>
+    </div>
+
+    <div class="card" id="experience">
+      <div class="card__header">
+        <h4 class="card__header-title">Experience</h4>
+      </div>
+      <div class="card__content">
+        <ul class="skills-list">
+          <li>Fronend
+            <ul>
+              <li>2+ years of profesional experience</li>
+              <li>JS, TS, React</li>
+            </ul>
+          </li>
+          <li>Mobile development
+            <ul>
+              <li>2+ years of profesional experience</li>
+              <li>JS, TS, React Native, ios, android</li>
+            </ul>
+          </li>
+          <li>Backend
+            <ul>
+              <li>1+ years of profesional experience</li>
+              <li>JS, TS, C#, SQL, NextJS, NodeJS, Database design</li>
+            </ul>
+          </li>
+          <li>Other
+            <ul>
+              <li>UI/UX - designing and iterating over mobile and web aplications</li>
+              <li>Go - currently learning</li>
+              <li>C, Haskell, Python - experience from university</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="card__footer">
       </div>
     </div>
   </main>

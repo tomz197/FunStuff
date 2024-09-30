@@ -3,6 +3,10 @@
     src: url(/assets/fonts/Geist.woff2);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Geist, Arial, sans-serif;
     min-height: 100dvh;
@@ -14,7 +18,46 @@ body {
 }
 
 header {
-    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 500px;
+    width: 100%;
+    position: sticky;
+    top: .5rem;
+}
+
+nav {
+    padding: .5rem 0;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul *+* {
+    border-left: 2px solid #333;
+    padding-left: calc(1rem + 2px);
+}
+
+@media (max-width: 324px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 0;
+    }
+
+    nav ul *+* {
+        border-left: 0px solid #333;
+        border-top: 2px solid #333;
+        padding-left: 0;
+    }
+
 }
 
 .landing-page {
@@ -35,6 +78,9 @@ header {
 
 main {
     flex: 1;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 500px;
 }
 
 footer {
@@ -42,7 +88,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #fff;
-    margin-top: 5rem;
+    margin-top: 10rem;
     gap: 1rem;
     padding: 1rem;
 }
@@ -66,15 +112,13 @@ footer {
 }
 
 .project-list {
-    margin: 2rem auto;
-    padding: 0 1rem;
-    max-width: 500px;
+    scroll-margin-top: 10rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.project-card {
+.card {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -86,7 +130,7 @@ footer {
     box-shadow: 10px 10px 0px 0px #A594F9;
 }
 
-.project-card-image {
+.card-image {
     aspect-ratio: 16 / 9;
     border-bottom: 3px solid #333;
     overflow: hidden;
@@ -94,40 +138,40 @@ footer {
 
 
 
-#bagetaexpress-card .project-card-image {
+#bagetaexpress-card .card-image {
     background-color: #ffff8d;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#bagetaexpress-card .project-card-image>img {
+#bagetaexpress-card .card-image>img {
     height: 60%;
     object-fit: cover;
 }
 
-.project-card__header {
+.card__header {
 
     padding: 1rem;
     gap: 1rem;
 }
 
-.project-card__header-title {
+.card__header-title {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.project-card__content {
+.card__content {
     padding: 1rem;
     padding-top: 0;
     gap: 1rem;
 }
 
-.project-card__content p {
+.card__content p {
     font-weight: 300;
 }
 
-.project-card__footer {
+.card__footer {
     display: flex;
     padding: 1rem;
     padding-top: 0;
@@ -165,4 +209,31 @@ footer {
     justify-content: center;
     aspect-ratio: 1;
     padding: 0.5em;
+}
+
+.link__inline {
+    text-decoration: underline;
+    color: #0000dc;
+}
+
+#about-me {
+    scroll-margin-top: 10rem;
+    overflow: clip;
+    margin-top: 10rem;
+}
+
+#experience {
+    scroll-margin-top: 10rem;
+    overflow: clip;
+    margin-top: 10rem;
+}
+
+#experience .card__content li li {
+    font-weight: 300;
+    list-style-type: disc;
+    margin-left: 1.75rem;
+}
+
+#experience .skills-list>li {
+    font-weight: 500;
 }
