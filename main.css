@@ -47,7 +47,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #fff;
-    margin-top: 10rem;
+    margin-top: 5rem;
     gap: 1rem;
     padding: 1rem;
 }
@@ -91,6 +91,11 @@ nav ul *+* {
     align-items: center;
     text-align: center;
     background-color: #F5EFFF;
+}
+
+.landing-page h1 span {
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 
 .landing-page h1 {

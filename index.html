@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tomáš Žifčák</title>
+  <title>Tomáš Žifčák - fun projects</title>
   <meta name="description"
-    content="Tomáš Žifčák's personal website / portfolio. Here you can find project, skills, work history, contact informations and more." />
-  <meta name="author" content="Tomáš Žifčák - personal website / portfolio" />
-  <meta name="keywords" content="Zifcak, Žifčák, personal, website, osobná, stránka, portfolio" />
+    content="Tomáš Žifčák's fun small projects. Here you can find some things I saw on internet and recreated." />
+  <meta name="author" content="Tomáš Žifčák - fun projects" />
+  <meta name="keywords" content="Zifcak, Žifčák, personal, website, projects" />
   <meta name="robots" content="index, follow" />
-  <meta name="og:title" content="Tomáš Žifčák" />
+  <meta name="og:title" content="Tomáš Žifčák - Fun projects" />
   <meta name="og:description"
     content="Tomáš Žifčák's personal website / portfolio. Here you can find project, skills, work history, contact informations and more." />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -19,128 +19,15 @@
   <link rel="manifest" href="/assets/site.webmanifest">
   <link rel="stylesheet" href="tailwind-preset.css">
   <link rel="stylesheet" href="main.css">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYYQ14DPX2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-RYYQ14DPX2');
-  </script>
-
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#experience">Experience</a></li>
-      </ul>
-    </nav>
-  </header>
   <main>
     <div class="landing-page">
-      <h1>Tomáš Žifčák</h1>
-      <h2>some of my projects, fun ideas and little bit about me</h2>
-      <div class="social-media-container">
-        <a class="btn__icon" href="https://github.com/tomz197/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-github">
-            <path
-              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-            <path d="M9 18c-4.51 2-5-2-7-2" />
-          </svg>
-        </a>
-        <a class="btn__icon" href="https://www.instagram.com/tom_z__/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-instagram">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-          </svg>
-        </a>
-        <a class="btn__icon" href="https://www.linkedin.com/in/tomaszifcak/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-linkedin">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-            <rect width="4" height="12" x="2" y="9" />
-            <circle cx="4" cy="4" r="2" />
-          </svg>
-        </a>
-      </div>
+      <h1>FunStuff<span>.zifcak.dev</span></h1>
+      <h2>To learn more about me visit <span class="link__inline"><a href="https://zifcak.dev">zifcak.dev<a/></span></h2>
     </div>
     <div class="project-list" id="projects">
-      <h3 class="project-section-title">Main project</h3>
-      <div class="card" id="bagetaexpress-card">
-        <div class="card-image">
-          <img loading="lazy" src="assets/images/bagetaExpress_brandmark.svg" alt="Bageta Express logo" />
-        </div>
-        <div class="card__header">
-          <h4 class="card__header-title">Bageta Express</h4>
-        </div>
-        <div class="card__content">
-          <p>
-            Bageta Express is a web application for ordering food for school. It is a project I have been working on
-            for a while. It's actively being used by a local restaurant and school in my hometown.
-          </p>
-        </div>
-        <div class="card__footer">
-          <a class="btn btn--flex" target="_blank" href="https://bageta.express">go to website</a>
-          <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/bagetaexpress">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-github">
-              <path
-                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-              <path d="M9 18c-4.51 2-5-2-7-2" />
-            </svg>
-          </a>
-          <a class="btn btn__icon" target="_blank" href="https://instagram.com/bagetaexpress">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-instagram">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <h3 class="project-section-title">Side projects</h3>
-      <div class="card">
-        <div class="card-image">
-          <img loading="lazy" src="assets/images/os-quiz.png" alt="screenshot from OS-quiz website" />
-        </div>
-        <div class="card__header">
-          <h4 class="card__header-title">OS quiz</h4>
-        </div>
-        <div class="card__content">
-          <p>
-            It's a simple web application for testing your knowledge of operating systems. It's a project I
-            created in very short time due to lack of practise tests for operating systems at my university.
-          </p>
-        </div>
-        <div class="card__footer">
-          <a class="btn btn--flex" target="_blank" href="https://os.zifcak.dev">go to website</a>
-          <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/os-drill">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-github">
-              <path
-                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-              <path d="M9 18c-4.51 2-5-2-7-2" />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <h3 class="project-section-title">Fun ideas</h3>
       <div class="card">
         <div class="card-image">
           <img loading="lazy" src="assets/images/docs.png" alt="screenshot from document" />
@@ -217,59 +104,6 @@
             </svg>
           </a>
         </div>
-      </div>
-    </div>
-
-    <div class="card" id="about-me">
-      <div class="card__header">
-        <h4 class="card__header-title">About me</h4>
-      </div>
-      <div class="card__content">
-        <p>I have been programming since 2019, at first, I wanted to make games(as many of us do) but that was too hard,
-          so after a while, in 2020, I landed in web development. After 2 years I landed my first job as a frontend
-          developer and I've been slowly moving towards backed. Currently, I'm studying at <a href="https://fi.muni.cz"
-            target="_blank" class="link__inline">FI MUNI</a>, exploring
-          programming in general.
-        </p>
-      </div>
-      <div class="card__footer">
-      </div>
-    </div>
-
-    <div class="card" id="experience">
-      <div class="card__header">
-        <h4 class="card__header-title">Experience</h4>
-      </div>
-      <div class="card__content">
-        <ul class="skills-list">
-          <li>Fronend
-            <ul>
-              <li>2+ years of profesional experience</li>
-              <li>JS, TS, React</li>
-            </ul>
-          </li>
-          <li>Mobile development
-            <ul>
-              <li>2+ years of profesional experience</li>
-              <li>JS, TS, React Native, ios, android</li>
-            </ul>
-          </li>
-          <li>Backend
-            <ul>
-              <li>1+ years of profesional experience</li>
-              <li>JS, TS, C#, SQL, NextJS, NodeJS, Database design</li>
-            </ul>
-          </li>
-          <li>Other
-            <ul>
-              <li>UI/UX - designing and iterating over mobile and web aplications</li>
-              <li>Go - currently learning</li>
-              <li>C, Haskell, Python - experience from university</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="card__footer">
       </div>
     </div>
   </main>
